@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- 
+        * Pagina Eductiva
+        * https://midominio.com/
+        * @Desarrollador Amilcar Gómez <amilcar@compuestudio.edu.co>
+        * Fecha 23-02-2021
+        * Development Owned by the Entity Compuestudio
+        * @license
+        * @Released under the MIT license and GPL licenses.
+        * Modificado por
+        * Fecha Modificación 
+        * Comentarios: Esta pagina contiene ejemplo de Formularios
+ -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Amilcar Gómnez">
+    <meta name="description" content="Esta pagina contiene ejemplo de Formularios">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Página Formularios</title>
+</head>
+<body>
+    <header>
+        <img src="img/imagen1.png" title="Imagen Header" width="100%" alt="Imagen Principal">
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="parrafos.html">Párrafos</a>
+        <a href="formularios.html">Formularios</a>
+        <a href="images.html">Images</a>
+        <a href="videos-audios.html">Videos y Audios</a>
+    </nav>
+
+    <br><br>
+
+    <main>
+        <form>
+            <!-- <h3>Titulo del Formulario</h3> -->
+            <fieldset>
+                <legend>Formulario DEMO</legend>
+                <input type="text" maxlength="7" name="nombredelusuario" id="nombredelusuario" placeholder="Escribe tu nombre" required><br>
+                <br><label for="numerotelefono">Escribe tu numero telefonico</label><br>
+                <legend><input type="number" max="5" name="numerotelefono" id="numerotelefono" autofocus placeholder="ej. 3105887589" required><br></legend>
+                <br><label for="numerotelefono">Radio Butoon Sexo</label><br>
+                <label for="masculino">M</label>
+                <input type="radio" name="sexop" value="masculino" id="masculino">
+                <label for="femenino">F</label>
+                <input type="radio" name="sexop" value="femenino" id="femenino">
+                <br>
+                <label for="checkViveenColombia">Vive en Colombia</label>
+                <input type="checkbox" name="checkViveenColombia" id="checkViveenColombia">
+                <label for="CapitalColombia">Vive en una capital</label>
+                <input type="checkbox" name="CapitalColombia" id="CapitalColombia" required><br><br>
+                <!-- <label for="ciudad">Seleccione su ciudad</label> -->
+                <label for="city">Seleccione su Pais</label>
+                <select name="city" id="city" required disabled>
+                    <option value="">Seleccione su Pais...</option>
+                    <option value="54844" selected>Colombia</option>
+                    <option value="1458">Argentina</option>
+                    <option value="45435">Peru</option>
+                </select><br><br>
+                <label for="city">Seleccione su ciudad
+                <input list="ciudad" name="city" id="city"></label>
+                <datalist id="ciudad" required>
+                    <option value="Medellin">Medellin</option>
+                    <option value="Bogotá">Bogotá</option>
+                    <option value="Cali">Cali</option>
+                </datalist><br><br>
+                <label for="cars">Choose a car:</label>
+                <select name="cars" id="cars" multiple>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+                </select><br><br>
+                <textarea name="textoamplio" id="textoamplio" cols="60" rows="2" placeholder="Escrita un texto de max 140 caracteres"></textarea><br><br>
+                <input type="date" name="fecha" id="fecha">
+                <input type="url" name="fecha" id="fecha" required>
+                <br><br>
+                <input type="file" name="sdsad" accept="application/pdf" id="sadsa">
+                <br><br>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <br><br>
+
+    <aside>
+        <h3>Páginas Relacionadas</h3>
+        <a href="#">Página</a>
+    </aside>
+    <footer>
+        <address>
+            Amilcar Gómez <br>
+            Bogotá <br>
+            Colombia 
+        </address>
+    </footer>
+</body>
+</html>
+
